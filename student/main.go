@@ -27,7 +27,7 @@ func Data_Manipulation(scanner *bufio.Scanner){
 		num, err := strconv.ParseFloat(line, 64)
 		if err != nil {
 			fmt.Println(err)
-		} else if num > 1000 {
+		} else if math.Abs(num) > 1000 { {
 			fmt.Printf("%v %v", 1200, 1500)
 			fmt.Println()
 		} else {
